@@ -1,0 +1,32 @@
+.tabBarExtraContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 0;
+  .tabBarExtraContentItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      .tabBarExtraContentItemLabel {
+        color: #8462bb;
+      }
+      .tabBarExtraContentItemNum {
+        color: #8462bb;
+      }
+    }
+    .tabBarExtraContentItemLabel {
+      font-size: 12px;
+      color: #99a2aa;
+    }
+    .tabBarExtraContentItemNum {
+      margin-top: 5px;
+      color: #222;
+      font-size: 12px;
+    }
+  }
+}

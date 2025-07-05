@@ -1,0 +1,76 @@
+#!/usr/bin/env node
+
+// 添加replaceAll方法
+if (!String.prototype.replaceAll) {
+  String.prototype.replaceAll = function (s1, s2) {
+    return this.replace(new RegExp(s1, "gm"), s2);
+  }
+}
+
+// 添加命令行环境变量
+process.argv.forEach(item => {
+  if (item.includes('=')) {
+    const [key, value] = item.split('=')
+    process.env[key] = value;
+  }
+})
+
+/**
+ * Module dependencies.
+ */
+
+var app = require("../app");
+var debug = require("debug")("cricket:server");
+var http = require("http");
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var httpPort = 6666;
+app.set("port", httpPort);
+
+
+/**
+ * Create HTTP server.
+ */
+var httpServer = http.createServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+httpServer.listen(httpPort);
+httpServer.on("error", onErrorHttp);
+httpServer.on("listening", onListeningHttp);
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+function onErrorHttp(error) {
+  if (error.syscall !== "listen") {
+    throw error;
+  }
+  var bind = typeof port === "string" ? "Pipe " + httpPort : "Port " + httpPort;
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
+      process.exit(1);
+      break;
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+function onListeningHttp() {
+  var addr = httpServer.address();
+  var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+  debug("Listening on HTTP" + bind);
+}

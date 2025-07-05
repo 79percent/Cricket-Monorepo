@@ -1,0 +1,28 @@
+.imgView {
+  display: grid;
+  position: relative;
+  .imgItem {
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+    .imgView {
+      object-fit: cover;
+    }
+  }
+  .moreNum {
+    background-color: rgba(59, 59, 59, 0.467);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    // cursor: zoom-in;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

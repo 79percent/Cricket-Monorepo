@@ -1,0 +1,109 @@
+.pcRecommendList {
+  .header {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(71, 71, 71);
+    }
+  }
+
+  .listBox {
+    display: grid;
+    user-select: none;
+
+    .item {
+      .img {
+        border-radius: 8px;
+        object-fit: cover;
+        // width: 100%;
+        // height: 100%;
+        background-color: #fff;
+        transition: all ease 0.2s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .titleRow {
+        margin-top: 4px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        .title {
+          display: inline;
+          max-width: 100%;
+          overflow: hidden;
+          text-decoration: none;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          line-height: 22px;
+          font-size: 14px;
+          font-weight: bold;
+          color: rgb(31, 31, 31);
+          transition: color 0.2s ease 0s;
+        }
+      }
+
+      .creatorRow {
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+
+        .avatar {
+          width: 24px;
+          height: 24px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .name {
+          margin-left: 4px;
+          display: block;
+          min-width: 0px;
+          line-height: 22px;
+          font-size: 14px;
+          color: rgb(71, 71, 71);
+          text-decoration: none;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+.spinBox {
+  padding: 50px 0;
+  text-align: center;
+  .last {
+    color: #828282;
+  }
+}
+
+.imgCount {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #00000085;
+  .imgCountNum {
+    margin-left: 4px;
+    font-weight: 600;
+  }
+}
+
+.emptyBox {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}

@@ -1,0 +1,48 @@
+.pcPagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  .pcPaginationItem {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .itemSpace {
+    margin-left: 10px;
+  }
+  .current {
+    background-color: #8462bb;
+    color: #fff;
+  }
+  .noCurrent {
+    &:hover {
+      background-color: #9b9b9b;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.positionLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.positionCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.positionRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

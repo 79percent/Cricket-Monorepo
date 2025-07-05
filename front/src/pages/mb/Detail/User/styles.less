@@ -1,0 +1,58 @@
+.mbDetailUser {
+  width: 100%;
+  height: 8rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  .mbDetailUserLeft {
+    width: 8rem;
+    height: 8rem;
+    padding: 0.4rem;
+  }
+  .mbDetailUserCneter {
+    width: calc(100% - 16rem);
+    height: 8rem;
+    line-height: 8rem;
+    .container {
+      width: 100%;
+      height: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      .name {
+        font-weight: bold;
+        color: #1f1f1f;
+        margin-left: 1rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .mbDetailUserRight {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button {
+      width: 7rem;
+      height: calc(7rem * 0.618);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.6rem;
+      border-radius: 2rem;
+      &:active {
+        opacity: 0.6;
+      }
+    }
+    .hasAttention {
+      background-color: #c8c8c8;
+      color: #fff;
+    }
+    .noAttention {
+      background-color: #8462bb;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>测试图片加载失败</title>
+  </head>
+  <body>
+    <img id="test" />
+  </body>
+  <script>
+    const imgEle = document.querySelector("#test");
+    imgEle.src =
+      "http://localhost:8001/static/illustrations/10aa3e7eb5c074c0c9faac101.jpeg.@_min.webp";
+    imgEle.onerror = () => {
+      console.log(123);
+      imgEle.src =
+        "http://localhost:8001/static/avatar/d3b79dee1f48c2fe36ae42a00.jpeg";
+      imgEle.onerror = () => {
+        console.log(456);
+        imgEle.src =
+          "http://localhost:8001/assets/img/D-tupianguoqi1.8339a8a0.svg";
+      };
+    };
+  </script>
+</html>

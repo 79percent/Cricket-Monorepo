@@ -1,0 +1,88 @@
+.tagBox {
+  width: 100%;
+  user-select: none;
+  .headerRow {
+    width: 1224px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  .tagsRowContainer {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    .tagRowBox {
+      width: 1224px;
+      margin: 0 auto;
+      transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s;
+      .tagRow {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: visible;
+        .tagItem {
+          height: 40px;
+          line-height: 40px;
+          padding: 0 10px;
+          border-radius: 4px;
+          margin-right: 0;
+          transition: all ease 0.2s;
+          &:hover {
+            opacity: 0.8;
+          }
+          .item {
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .arrow {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      z-index: 2;
+      background-color: #ccc;
+      cursor: pointer;
+      visibility: hidden;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.4s ease 0s;
+    }
+    &:hover {
+      .arrow {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    }
+    .leftArrow {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .rightArrow {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .hide {
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+    .show {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+  }
+}

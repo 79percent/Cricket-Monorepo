@@ -1,0 +1,97 @@
+.left {
+  width: 78%;
+  user-select: none;
+  .box {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    .leftHeader {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .avatarBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .nameBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          margin-left: 20px;
+          .name {
+            color: #333;
+            font-size: 16px;
+          }
+          .updatetime {
+            color: #333;
+            font-size: 12px;
+          }
+        }
+      }
+      .attentionBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .leftContent {
+      width: 100%;
+      margin: 0 0 20px 0;
+      font-size: 18px;
+      color: #444;
+    }
+    .leftTags {
+      margin: 0 0 20px 0;
+    }
+    .leftImgBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &:hover {
+        .leftArrow,
+        .rightArrow {
+          display: inline-block;
+        }
+      }
+      img {
+        display: block;
+        cursor: zoom-in;
+      }
+      .leftArrow {
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      .rightArrow {
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+    .leftShowcase {
+      margin-top: 20px;
+      width: 100%;
+      height: 140px;
+    }
+  }
+}

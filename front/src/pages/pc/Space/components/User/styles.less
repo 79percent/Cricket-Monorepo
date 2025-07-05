@@ -1,0 +1,82 @@
+.pcSpaceUserInfo {
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #f6f6f6;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .userAvatar {
+    // cursor: pointer;
+    margin-top: -60px;
+    border: 4px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .userName {
+    // cursor: pointer;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #181818;
+  }
+  .userProfile {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    // cursor: pointer;
+    .profile {
+      max-width: 500px;
+      color: #aaa;
+    }
+    .profileLong {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      text-align: center;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 36px;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #f6f6f6);
+      }
+    }
+  }
+  .attentionButton {
+    margin-top: 10px;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 64px;
+    transition: all ease 0.2s;
+    border-radius: 40px;
+  }
+  .noAttention {
+    background-color: #8462bb;
+    color: #fff;
+    &:hover {
+      background-color: #936ad4;
+    }
+  }
+  .hasAttention {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgb(71, 71, 71);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}

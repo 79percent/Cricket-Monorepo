@@ -1,0 +1,58 @@
+.pcLoginMain {
+  margin: 0 auto;
+  max-height: 700px;
+  min-height: 600px;
+  height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: row;
+  .left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .titleBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .videoBox {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .right {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .pcLoginMain {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1304px) {
+  .pcLoginMain {
+    width: 100%;
+    padding: 0 40px;
+    // min-width: 710px;
+  }
+  .right {
+    width: 0;
+  }
+}
+
+@media screen and (min-width: 1304px) {
+  .pcLoginMain {
+    width: 1224px;
+  }
+  .right {
+    width: 300px;
+    margin-left: 20px;
+  }
+}

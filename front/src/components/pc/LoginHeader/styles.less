@@ -1,0 +1,36 @@
+.pcLoginHeader {
+  width: 100%;
+  height: 72px;
+  padding: 0 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px #e6e6e6;
+  .logo {
+    width: 165.25px;
+    height: 72px;
+    background: url(~@/assets/img/logo.svg);
+    background-size: 100% 100%;
+  }
+  .homeText {
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    color: #8462bb;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    &:hover {
+      color: #4908b1;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .pcLoginHeader {
+    display: none;
+  }
+}

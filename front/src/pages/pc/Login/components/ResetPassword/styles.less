@@ -1,0 +1,39 @@
+.box {
+  width: 100%;
+  .logoBox {
+    justify-content: center;
+    align-items: center;
+    .logo {
+      width: 126.7px;
+      height: 60px;
+      background: url(~@/assets/img/logo.svg);
+      background-size: 100% 100%;
+    }
+  }
+  .header {
+    color: rgb(45, 45, 45);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .codeRight {
+    width: 80px;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+    font-size: 13px;
+    color: #888888;
+    user-select: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logoBox {
+    display: flex;
+  }
+}
+@media screen and (min-width: 750px) {
+  .logoBox {
+    display: none;
+  }
+}

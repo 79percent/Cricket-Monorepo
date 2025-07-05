@@ -1,0 +1,15 @@
+node_modules/
+public/static/avatar/*
+!public/static/avatar/*.gitkeep
+public/static/illustrations/*
+!public/static/illustrations/*.gitkeep
+public/static/background/*
+!public/static/background/*.gitkeep
+public/test/avatar/*
+!public/test/avatar/*.gitkeep
+public/test/illustrations/*
+!public/test/illustrations/*.gitkeep
+public/test/background/*
+!public/test/background/*.gitkeep
+logs
+db/dump/*

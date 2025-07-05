@@ -1,0 +1,34 @@
+.leftImgBox {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgModalRoot {
+  .mask {
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    z-index: 1000;
+    background-color: #00000073;
+  }
+
+  .contentWrap {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    .img {
+      user-select: none;
+      cursor: zoom-in;
+    }
+  }
+}
