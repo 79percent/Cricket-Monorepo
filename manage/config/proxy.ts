@@ -1,30 +1,15 @@
 export default {
-  // dev: {
-  //   '/api/': {
-  //     target: 'http://localhost:6666',
-  //     changeOrigin: true,
-  //   },
-  //   '/static/': {
-  //     target: 'http://localhost:6666',
-  //     changeOrigin: true,
-  //   },
-  //   '/ws': {
-  //     target: 'ws://localhost:6666',
-  //     changeOrigin: true,
-  //     ws: true,
-  //   },
-  // },
   dev: {
     '/api/': {
-      target: 'https://cricket.cab',
+      target: 'http://localhost:6666',
       changeOrigin: true,
     },
     '/static/': {
-      target: 'https://cricket.cab',
+      target: 'http://localhost:6666',
       changeOrigin: true,
     },
     '/ws': {
-      target: 'ws://cricket.cab',
+      target: 'ws://localhost:6666',
       changeOrigin: true,
       ws: true,
     },

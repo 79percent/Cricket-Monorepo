@@ -29,13 +29,13 @@ const LoginBox = () => {
             >
               {activeType === 1 ? '已有账号？去登录' : '还没有账号？去注册'}
             </span>
-            <span
+            {/* <span
               onClick={() => {
                 setActiveType(2);
               }}
             >
               忘记密码？
-            </span>
+            </span> */}
           </>
         )}
       </div>

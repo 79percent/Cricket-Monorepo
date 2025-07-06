@@ -14,19 +14,4 @@ export default {
       ws: true,
     },
   },
-  // dev: {
-  //   '/api/': {
-  //     target: 'http://cricket.cab',
-  //     changeOrigin: true,
-  //   },
-  //   '/static/': {
-  //     target: 'http://cricket.cab',
-  //     changeOrigin: true,
-  //   },
-  //   '/ws': {
-  //     target: 'ws://cricket.cab',
-  //     changeOrigin: true,
-  //     ws: true,
-  //   },
-  // },
 };

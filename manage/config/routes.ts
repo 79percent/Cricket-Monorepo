@@ -30,12 +30,12 @@ export default [
       {
         name: '用户列表',
         path: '/user/list',
-        component: '@/pages/user/List',
+        component: '@/pages/User/List',
       },
       {
         name: '创建用户',
         path: '/user/add',
-        component: '@/pages/user/Add',
+        component: '@/pages/User/Add',
       },
       {
         component: '404',
@@ -55,12 +55,12 @@ export default [
       {
         name: '投稿列表',
         path: '/work/list',
-        component: '@/pages/work/List',
+        component: '@/pages/Work/List',
       },
       {
         name: '发布作品',
         path: '/work/add',
-        component: '@/pages/work/Add',
+        component: '@/pages/Work/Add',
       },
       {
         component: '404',
@@ -80,17 +80,17 @@ export default [
       {
         name: '待审核',
         path: '/audit/wait',
-        component: '@/pages/audit/WaitAudit',
+        component: '@/pages/Audit/WaitAudit',
       },
       {
         name: '已通过',
         path: '/audit/pass',
-        component: '@/pages/audit/PassAudit',
+        component: '@/pages/Audit/PassAudit',
       },
       {
         name: '未通过',
         path: '/audit/unpass',
-        component: '@/pages/audit/UnPassAudit',
+        component: '@/pages/Audit/UnPassAudit',
       },
       {
         component: '404',
@@ -102,7 +102,7 @@ export default [
     icon: 'monitor',
     path: '/userVisits',
     access: 'canAdmin',
-    component: '@/pages/userVisits',
+    component: '@/pages/UserVisits',
   },
   {
     component: '404',

@@ -18,18 +18,7 @@ export default (props) => {
       return (
         <TipsInfo
           title="页面正在开发中..."
-          content={
-            isMobile ? (
-              '请前往电脑PC端浏览器打开网站 www.cricket.cab'
-            ) : (
-              <>
-                <span style={{ marginRight: '1em' }}>
-                  注册用户以及时获取网站更新消息
-                </span>
-                <a href="/login">去注册</a>
-              </>
-            )
-          }
+          content={''}
         />
       );
     }
