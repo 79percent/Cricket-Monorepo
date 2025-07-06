@@ -3,50 +3,50 @@
 ## PC
 
 ### 登录页
-![登录页界面截图](/docs/front/login.png)
+![login.png](https://img.picui.cn/free/2025/07/07/686a9f646fa91.png)
 
 ### 响应式
 ![登录页界面响应式](/docs/front/pc_login.gif)
  
 ### 主页
-![主页界面截图](/docs/front/home.png)
+![home.png](https://img.picui.cn/free/2025/07/07/686a9f63188d5.png)
  
 ### 详情页
-![详情页界面截图](/docs/front/detail.png)
+![detail.png](https://img.picui.cn/free/2025/07/07/686a9f60b8cbf.png)
  
 ### 个人主页
-![个人主页界面截图](/docs/front/my.png)
+![my.png](https://img.picui.cn/free/2025/07/07/686a9f6c22159.png)
  
 ### 动态
-![动态界面截图](/docs/front/recent.png)
+![recent.png](https://img.picui.cn/free/2025/07/07/686a9f6eb4360.png)
  
 ### 插画
-![插画界面截图](/docs/front/Illustration.png)
+![Illustration.png](https://img.picui.cn/free/2025/07/07/686a9f63eb779.png)
  
 ### 收藏
-![收藏界面截图](/docs/front/collection.png)
+![collection.png](https://img.picui.cn/free/2025/07/07/686a9f60e5ba6.png)
 
 ## Mobile
 
 ### 登录页
-![登录页界面截图](/docs/front/mb_login.png)
+![mb_login.png](https://img.picui.cn/free/2025/07/07/686a9f68d4bb2.png)
 
 ### 主页
-![主页界面截图](/docs/front/mb_home.png)
+![mb_home.png](https://img.picui.cn/free/2025/07/07/686a9f687e543.png)
 
 ### 详情
-![详情页界面截图](/docs/front/mb_detail.png)
+![mb_detail.png](https://img.picui.cn/free/2025/07/07/686a9f6829b47.png)
 
 ### 个人主页
-![个人主页界面截图](/docs/front/mb_my.png)
+![mb_my.png](https://img.picui.cn/free/2025/07/07/686a9f6b783dc.png)
  
 ## manage
 
 ### 用户列表
-![用户列表界面截图](/docs/manage/userlist.png)
+![userlist.png](https://img.picui.cn/free/2025/07/07/686a9f6096ce5.png)
  
 ### 投稿列表
-![投稿列表界面截图](/docs/manage/articles.png)
+![articles.png](https://img.picui.cn/free/2025/07/07/686a9f6073490.png)
  
 ### 访问记录
-![访问记录界面截图](/docs/manage/visit.png)
+![visit.png](https://img.picui.cn/free/2025/07/07/686a9f6002ed9.png)
