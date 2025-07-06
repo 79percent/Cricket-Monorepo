@@ -1,9 +1,12 @@
 # Cricket-Monorepo
  
-## front
+## PC
 
 ### 登录页
 ![登录页界面截图](/docs/front/login.png)
+
+### 响应式
+![登录页界面响应式](/docs/front/pc_login.gif)
  
 ### 主页
 ![主页界面截图](/docs/front/home.png)
@@ -22,6 +25,20 @@
  
 ### 收藏
 ![收藏界面截图](/docs/front/collection.png)
+
+## Mobile
+
+### 登录页
+![登录页界面截图](/docs/front/mb_login.png)
+
+### 主页
+![主页界面截图](/docs/front/mb_home.png)
+
+### 详情
+![详情页界面截图](/docs/front/mb_detail.png)
+
+### 个人主页
+![个人主页界面截图](/docs/front/mb_my.png)
  
 ## manage
 
