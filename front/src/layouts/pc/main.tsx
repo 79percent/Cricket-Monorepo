@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import styles from './main.less';
 import Header from '@/components/pc/Header';
 import Footer from '@/components/pc/Footer';
-import SiderBeian from '@/components/pc/SiderBeian';
 import { history, connect, Dispatch } from 'umi';
 
 interface Props {
@@ -41,7 +40,6 @@ const PCMain: React.FC<Props> = ({ dispatch, children }) => {
         {children}
       </section>
       <Footer />
-      {isPChome && <SiderBeian />}
     </div>
   );
 };
